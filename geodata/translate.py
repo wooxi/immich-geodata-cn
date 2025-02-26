@@ -75,7 +75,7 @@ def translate_cities500():
                 and (longitude, latitude) in geodata[country_code]
             ):
                 location = geodata[country_code][(longitude, latitude)]
-                res = location["admin_2"]
+                res = location["admin_4"]
                 res = convert(res, "zh-cn")
 
                 # 处理同时存在简繁名字的场景，例如 	东京都/東京都
